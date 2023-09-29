@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+#HI
+<style>
+    body {
+        background-color: rgb(2, 0, 22);
+        position: relative;
+        width:100%;
+        height:7010px;
+    }
+    .circle{
+        background: #ffffff;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        position: absolute;
+    }
+</style>
+<html>
+    <body>
+        <h1 style="color:rgb(234, 252, 255); font-family:'Comic Sans MS', 'Comic Sans', cursive;">
+            Star Wars, or Star Trek?
+        </h1>
+        <p>
+            <form action="https://youtu.be/glN0W8WogK8">
+                <button type="submit" style="font-family:'Comic Sans MS', 'Comic Sans', cursive;">Star Wars</button>
+             </form>
+             <form action="https://youtu.be/geC1sPib9_I">
+                <button type="submit" style="font-family:'Comic Sans MS', 'Comic Sans', cursive;">Star Trek</button>
+             </form>
+        </p>
+        <script>
+            // JavaScript to create randomly placed circles
+            const body = document.body;
+    
+            for (let i = 0; i < 100; i++) { // You can adjust the number of circles
+                const circle = document.createElement('div');
+                circle.className = 'circle';
+                circle.style.left = `${Math.random() * 100}%`; // Random left position
+                circle.style.top = `${Math.random() * 100}%`; // Random top position
+                body.appendChild(circle);
+            }
+        </script>
+    </body>
+</html>
