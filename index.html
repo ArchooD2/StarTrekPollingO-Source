@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 #HI
+<meta property="og:site_name" content="Test Build: Star Trek Polling">
+<meta property="og:description" content="Test Build for the Site for Polling about Star Trek versus Star Wars and other dumb squabbles">
+<meta name="theme-color" content=rgb(2,20,200)>
 <style>
     body {
         background-color: rgb(2, 0, 22);
@@ -41,7 +44,7 @@
             // JavaScript to create randomly placed circles
             const body = document.body;
     
-            for (let i = 0; i < 100; i++) { // You can adjust the number of circles
+            for (let i = 0; i < math.random()*100; i++) { // You can adjust the number of circles
                 const circle = document.createElement('div');
                 circle.className = 'circle';
                 circle.style.left = `${Math.random() * 100}%`; // Random left position
@@ -51,6 +54,6 @@
         </script>
     </body>
     <footer style="color:rgb(255,255,255)">
-        Test Build PJSans 2023
+        Main Build! Test build is at https://github.com/ArchooD2/StarTrekPollingO-Source
     </footer>
 </html>
