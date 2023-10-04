@@ -62,11 +62,12 @@
                 circle.style.left = `${Math.random() * 100}%`; // Random left position
                 circle.style.top = `${Math.random() * 100}%`; // Random top position
                 body.appendChild(circle);
+                await new Promise(r => setTimeout(r, 140));
             }
         </script>
     </body>
     <footer style="color:rgb(255,255,255)">
         Test build is YOU
-        v1.3
+        v1.3.1
     </footer>
 </html>
