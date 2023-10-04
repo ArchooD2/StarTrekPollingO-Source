@@ -3,6 +3,9 @@
 <meta property="og:site_name" content="Test Build: Star Trek Polling">
 <meta property="og:description" content="Test Build for the Site for Polling about Star Trek versus Star Wars and other dumb squabbles">
 <meta name="theme-color" content=rgb(2,20,200)>
+<script>
+    const sleep = ms => new Promise(r => setTimeout(r, ms));
+</script>
 <style>
     body {
         background-color: rgb(2, 0, 22);
@@ -62,7 +65,7 @@
                 circle.style.left = `${Math.random() * 100}%`; // Random left position
                 circle.style.top = `${Math.random() * 100}%`; // Random top position
                 body.appendChild(circle);
-                await new Promise(r => setTimeout(r, 140));
+                await sleep(15);
             }
         </script>
     </body>
